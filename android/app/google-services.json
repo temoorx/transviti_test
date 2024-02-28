@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:748852369382:android:02847ca117a8758cc7a827",
+        "mobilesdk_app_id": "1:748852369382:android:fe527155e30f89bac7a827",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.example.transviti_test"
         }
       },
       "oauth_client": [],
