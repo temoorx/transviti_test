@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:transviti_test/src/home/data/products_model.dart';
 import 'package:dio/dio.dart';
 

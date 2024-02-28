@@ -1,14 +1,11 @@
-import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:transviti_test/src/app_router.dart';
 
 @RoutePage()
-class SingUpScreen extends StatelessWidget {
-  const SingUpScreen({super.key});
+class SignInScreen extends StatelessWidget {
+  const SignInScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +14,7 @@ class SingUpScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sign Up'),
+        title: const Text('Sign In'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -43,16 +40,16 @@ class SingUpScreen extends StatelessWidget {
                   try {
                     await context
                         .read<FirebaseAuth>()
-                        .createUserWithEmailAndPassword(
+                        .signInWithEmailAndPassword(
                           email: email,
                           password: password,
                         );
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(content: Text('Sign up successful')),
+                      const SnackBar(content: Text('Sign in successful')),
                     );
                   } catch (error) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Failed to sign up: $error')),
+                      SnackBar(content: Text('Failed to sign in: $error')),
                     );
                   }
                 } else {
@@ -62,7 +59,7 @@ class SingUpScreen extends StatelessWidget {
                   );
                 }
               },
-              child: const Text('Sign Up'),
+              child: const Text('Sign In'),
             ),
           ],
         ),

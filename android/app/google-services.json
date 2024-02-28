@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "748852369382",
+    "project_id": "transvititest",
+    "storage_bucket": "transvititest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748852369382:android:02847ca117a8758cc7a827",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuGr81W3lQgSO3Y6fHVxtN_E_5sXsO0a4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

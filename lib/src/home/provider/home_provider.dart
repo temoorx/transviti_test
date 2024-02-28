@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:transviti_test/src/home/data/products_model.dart';
 
-import 'package:flutter/material.dart';
 import 'package:transviti_test/src/home/repository/repository.dart';
 
 class ProductProvider extends ChangeNotifier {

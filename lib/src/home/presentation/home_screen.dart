@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:transviti_test/src/home/provider/home_provider.dart';
 
-import '../data/products_model.dart';
 
 @RoutePage()
 class HomeScreen extends StatelessWidget {
